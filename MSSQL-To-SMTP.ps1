@@ -10,7 +10,7 @@ $path = "FullSavePath_$(get-date -f MM-dd).txt";
 function Send-ToEmail([string]$email, [string]$attachmentpath){
 
     $message = new-object Net.Mail.MailMessage;
-    $message.From = "SMTP Account ie: alias@domain.com";
+    $message.From = "alias@domain.com";
     $message.To.Add($email);
     $message.Subject = "Describe Sent Results";
     $message.Body = "";
