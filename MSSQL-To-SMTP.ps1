@@ -5,7 +5,7 @@ remove-module sqlps;
 
 $username = "domain/acct";
 $password = "cred";
-$path = "Path of Log Result to Send_$(get-date -f MM-dd).txt";
+$path = "C:\look\im\a\path\to\root_$(get-date -f MM-dd).txt";
 
 function Send-ToEmail([string]$email, [string]$attachmentpath){
 
