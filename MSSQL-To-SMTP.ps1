@@ -24,4 +24,4 @@ function Send-ToEmail([string]$email, [string]$attachmentpath){
     write-host "Mail Sent" ; 
     $attachment.Dispose();
  }
-Send-ToEmail  -email "destination@domain.com" -attachmentpath $path;
+Send-ToEmail  -email "alias@domain.com" -attachmentpath $path;
