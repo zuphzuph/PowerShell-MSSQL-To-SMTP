@@ -3,7 +3,7 @@ $mydata = invoke-sqlcmd -InputFile "Full Path to .SQL Query" -serverinstance -In
 $mydata | out-file SaveLocationForQueryResults.sql;
 remove-module sqlps;
 
-$username = "domain\acct";
+$username = "domain/acct";
 $password = "cred";
 $path = "C:\look\im\a\path\to\root_$(get-date -f MM-dd).txt";
 
